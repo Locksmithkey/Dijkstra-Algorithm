@@ -1,0 +1,42 @@
+Analysis and Design
+
+Problem: Finding the smallest weight between from a starting vertex
+
+Client file uses Dijkstra's algorithm to determine shortest path beteen each city from start
+uses the Graph class to create a directed graph of vertices along with their edge weights. 
+
+Client file also takes in external file data to populate  the vector and graph.
+
+Using a vector of structs that hold vertex data such at the name, weight, mark status, and previous visited 
+vertex to circumnavigate though the graph and find each shortest distance.
+
+The cities are added via the AddVertex method in the Graph class along with AddEdge to decalre the distance between two cites.
+
+It also uses a GetToVertices method that queues up a input city's adjecent city based on the direction in the graph.
+
+For finding the shortest path from V1 in ginfile2.dat.
+
+once all origins, destinations, and distances are sorted in a containter; V1 is provided as a start vertex and its adjecent vertex
+are fed into the queue via GetToVertices. Then the function finds the first unvisited node that current distance is less than the
+weight between the two cities. In this case, it's V2. V2 is marked as visited and total weight is updated in the struct, along with
+its previous being V1. The FindMin and UpdateVertex funtions are called again until every vertex has been visited with their correct
+weights added.
+
+Samplw Adjacency Matrix for ginfile2.dat
+
+	V1	V2	V3	V4	V5	V6	V7
+V1	0	2	0	1	0	0	0		
+
+V2	0	0	0	3	10	0	0
+
+V3	4	0	0	0	0	5	0
+
+V4	0	0	2	0	2	8	4
+
+V5	0	0	0	0	0	0	6
+
+V6	0	0	0	0	0	0	0
+
+V7	0	0	0	0	0	1	0
+
+

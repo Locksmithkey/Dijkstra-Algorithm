@@ -1,0 +1,56 @@
+Script started on 2025-12-12 11:42:29-05:00
+]0;walker_kp@cobra:~/Prog4[walker_kp@cobra Prog4]$ c++ dijkstra.cpp
+]0;walker_kp@cobra:~/Prog4[walker_kp@cobra Prog4]$ ./a.out ginfile2.dat[1P.dat1.dat
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	DIJKSTRA'S ALGORITHM	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A Weighted Graph Has Been Built For These 7 Cities
+
+                       Atlanta                        Austin                       Chicago
+                        Dallas                        Denver                       Houston
+                    Washington
+
+Please input your starting vertex: Atl
+
+Invalid City Name, Try Again.
+
+Please input your starting vertex: Atlanta
+
+------------------------------------------------------------------------------------------
+                        Vertex                      Distance                     Previous
+
+                       Atlanta                             0                           N/A
+                    Washington                           600                       Atlanta
+                       Houston                           800                       Atlanta
+                        Dallas                          1900                    Washington
+                        Austin                          2100                        Dallas
+                        Denver                          2680                        Dallas
+                       Chicago                          2800                        Dallas
+
+]0;walker_kp@cobra:~/Prog4[walker_kp@cobra Prog4]$ ./a.out ginfile1.dat3.dat
+Invalid File: ginfile13.dat
+]0;walker_kp@cobra:~/Prog4[walker_kp@cobra Prog4]$ ./a.out ginfile13.dat[1P.dat3.dat[1P.dat[1P.dat2.dat
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	DIJKSTRA'S ALGORITHM	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A Weighted Graph Has Been Built For These 7 Cities
+
+                            V1                            V2                            V3
+                            V4                            V5                            V6
+                            V7
+
+Please input your starting vertex: V1
+
+------------------------------------------------------------------------------------------
+                        Vertex                      Distance                     Previous
+
+                            V1                             0                           N/A
+                            V4                             1                            V1
+                            V2                             2                            V1
+                            V3                             3                            V4
+                            V5                             3                            V4
+                            V7                             5                            V4
+                            V6                             6                            V7
+
+]0;walker_kp@cobra:~/Prog4[walker_kp@cobra Prog4]$ exit
+exit
+
+Script done on 2025-12-12 11:43:23-05:00
